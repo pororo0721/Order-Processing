@@ -133,3 +133,15 @@ Peaches 3 DRAFT
 
 Orange 2 DRAFT
 
+### Answer
+```
+    def show_orders(self):
+        print(f"SHOW_ORDERS")
+        print(f"Order {self.order_id} {self.order_status} {sum(self.order_items.values())}")
+        for product, quantity in self.order_items.items():
+            print(f"{product} {quantity} {self.order_status}")
+
+
+```
+
+
