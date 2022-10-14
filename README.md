@@ -26,8 +26,9 @@ Commands of multiple types:
 
 Commands:
 Type 1: CREATE_ORDER
-This command should create an order in your system and print string “Order created with id
-[order_id]”
+This command should create an order in your system and print string “Order
+created with id [order_id]”
+
 Example:
 CREATE_ORDER
 Order created with id 1
@@ -58,6 +59,7 @@ added to order
 -  If the order id doesn’t exist in the system then print “Order with id 
 [order_id] does not exist”
 -  If the order product name doesn’t exist in the inventory then print“Product [product name] does not exist”
+
 Example:
 ADD_ORDERLINE 1 Apples 5
 5 Apples added to order 1
