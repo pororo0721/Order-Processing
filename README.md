@@ -77,3 +77,28 @@ ADD_ORDERLINE 1 Apples 5
 
 ```
 
+Type 3: SHOW_ORDER [order_id]
+
+This command should print the current state of the given order in the
+following format:
+Order [order_id] {order_status} {total count of items} [product_name]
+[quantity] [status of order line]
+… other order lines
+
+Example:
+SHOW_ORDER 1
+Order 1 DRAFT 8
+Apples 5 DRAFT
+Oranges 3 DRAFT
+
+
+### Answer
+```
+    def show_order(self):
+        print(f"SHOW_ORDER {self.order_id}")
+        print(f"Order {self.order_id} {self.order_status} {sum(self.order_items.values())}")
+        for product, quantity in self.order_items.items():
+            print(f"{product} {quantity} {self.order_status}")
+```
+
+
