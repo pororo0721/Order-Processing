@@ -101,4 +101,21 @@ Oranges 3 DRAFT
             print(f"{product} {quantity} {self.order_status}")
 ```
 
+Type 4: SHOW_ORDERS
+
+This command should print the current state of the all the orders in the 
+following format:
+
+Order [order_id] {Order status} {total count of items}
+[product_name] [quantity] [status of order line]
+
+Example:
+
+SHOW_ORDERS
+Order 1 DRAFT 8
+Apples 5 DRAFT
+Oranges 3 DRAFT
+Order 2 DRAFT 5
+Peaches 3 DRAFT
+Orange 2 DRAFT
 
