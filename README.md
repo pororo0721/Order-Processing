@@ -30,7 +30,9 @@ This command should create an order in your system and print string “Order
 created with id [order_id]”
 
 Example:
+
 CREATE_ORDER
+
 Order created with id 1
 
 
@@ -61,7 +63,9 @@ added to order
 -  If the order product name doesn’t exist in the inventory then print“Product [product name] does not exist”
 
 Example:
+
 ADD_ORDERLINE 1 Apples 5
+
 5 Apples added to order 1
 
 ### Answer
@@ -86,9 +90,13 @@ Order [order_id] {order_status} {total count of items} [product_name]
 … other order lines
 
 Example:
+
 SHOW_ORDER 1
+
 Order 1 DRAFT 8
+
 Apples 5 DRAFT
+
 Oranges 3 DRAFT
 
 
@@ -112,10 +120,16 @@ Order [order_id] {Order status} {total count of items}
 Example:
 
 SHOW_ORDERS
+
 Order 1 DRAFT 8
+
 Apples 5 DRAFT
+
 Oranges 3 DRAFT
+
 Order 2 DRAFT 5
+
 Peaches 3 DRAFT
+
 Orange 2 DRAFT
 
