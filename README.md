@@ -50,13 +50,14 @@ class Order:
 ```
 
 Type 2: ADD_ORDERLINE [order_id] [product_name] [product_quantity]
-This command should add product to the given order id with given product name and quantity.
-● If the product is added then print “[product_quantity] [product_name] added to order
+This command should add product to the given order id with given product 
+name and quantity.
+-  If the product is added then print “[product_quantity] [product_name] 
+added to order
 [order_id]”
-● If the order id doesn’t exist in the system then print “Order with id [order_id] does not
-exist”
-● If the order product name doesn’t exist in the inventory then print “Product [product
-name] does not exist”
+-  If the order id doesn’t exist in the system then print “Order with id 
+[order_id] does not exist”
+-  If the order product name doesn’t exist in the inventory then print“Product [product name] does not exist”
 Example:
 ADD_ORDERLINE 1 Apples 5
 5 Apples added to order 1
